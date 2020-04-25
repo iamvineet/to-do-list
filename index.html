@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+  <title>To-Do-List</title>
+</head>
+
+<body>
+  <header>
+    <h1>To-Do List</h1>
+  </header>
+  <form>
+    <input type="text" class="todo-input">
+    <button type="submit" class="todo-button" name="button">
+      <i class="fas fa-edit"></i>
+    </button>
+    <div class="select">
+      <select name="todos" class="filter-todo">
+        <option value="all">All</option>
+        <option value="completed">Completed</option>
+        <option value="pending">Pending</option>
+      </select>
+    </div>
+  </form>
+
+  <div class="todo-container">
+    <ul class="todo-list"></ul>
+  </div>
+  <script src="./app.js" charset="utf-8"></script>
+</body>
+
+</html>
